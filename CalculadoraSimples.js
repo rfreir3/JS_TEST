@@ -1,4 +1,4 @@
-//chamada da função input que lê valores e os atribui as variaveis indicadas
+//chamada do método input que lê valores e os atribui às variáveis indicadas
 const input = require('readline-sync')
 
 let aux
