@@ -1,4 +1,4 @@
-//chamada do método input que lê valores e os atribui às variáveis indicadas
+//chamada do método input que lê valores e os atribui as variáveis indicadas
 const input = require('readline-sync')
 
 let aux
@@ -6,7 +6,7 @@ let num1
 let num2
 do{
     console.log('\n======================================')    
-    console.log('Menu Interativo da Calculadora Simples')
+    console.log('         Calculadora Simples          ')
     console.log('======================================')
     console.log('Digite "+" para soma')
     console.log('Digite "-" para subtrair')
@@ -17,29 +17,29 @@ do{
     
     switch(aux){
         case '+':
-            num1 = Number(input.question('Digite o valor do primeiro numero: '))
-            num2 = Number(input.question('Digite o valor do segundo numero: '))
-            console.log('\nResultado: ', (num1 + num2).toFixed(2))
+            num1 = Number(input.question('Digite o valor do primeiro valor: '))
+            num2 = Number(input.question('Digite o valor do segundo valor: '))
+            console.log(`\nResultado: ${num1} + ${num2} = ${(num1 + num2).toFixed(2)}`)
             break
         case '-':
-            num1 = Number(input.question('Digite o valor do primeiro numero: '))
-            num2 = Number(input.question('Digite o valor do segundo numero: '))
-            console.log('\nResultado: ', (num1 - num2).toFixed(2))
+            num1 = Number(input.question('Digite o valor do primeiro valor: '))
+            num2 = Number(input.question('Digite o valor do segundo valor: '))
+            console.log(`\nResultado: ${num1} - ${num2} = ${(num1 - num2).toFixed(2)}`)
             break
         case '*':
-            num1 = Number(input.question('Digite o valor do primeiro numero: '))
-            num2 = Number(input.question('Digite o valor do segundo numero: '))
-            console.log('\nResultado: ', (num1 * num2).toFixed(2))
+            num1 = Number(input.question('Digite o valor do primeiro valor: '))
+            num2 = Number(input.question('Digite o valor do segundo valor: '))
+            console.log(`\nResultado: ${num1} * ${num2} = ${(num1 * num2).toFixed(2)}`)
             break
         case '/':
-            num1 = Number(input.question('Digite o valor do primeiro numero: '))
-            num2 = Number(input.question('Digite o valor do segundo numero: '))
+            num1 = Number(input.question('Digite o valor do primeiro valor: '))
+            num2 = Number(input.question('Digite o valor do segundo valor: '))
             if(num2 != 0){
-                console.log('\nResultado: ', (num1 / num2).toFixed(2))
+                console.log(`\nResultado: ${num1} / ${num2} = ${(num1 / num2).toFixed(2)}`)
                 break                
             }
             else{
-                console.log('\nO resultado e uma indeterminacao\n')
+                console.log('\nO resultado é uma indeterminação\n')
                 break
             }
         case 'sair':
